@@ -4,6 +4,17 @@
   переключая тему
 */
 
+
+/* ==========================================
+
+Если отказаться от селекторов обращения к конкретной теме,
+то если браузер выбрал светлую тему и мы принудительно переключаем на тёмную,
+тогда стили останутся соответствующие светлой.
+
+чуть больше описал в light.css
+
+========================================== */
+
 .page.theme_dark {
   --bg-color: #000028;
   --accent-color: #ff0070;
@@ -21,15 +32,15 @@
   background-attachment: fixed;
 }
 
-.page.theme_dark .decorated-text {
+.theme_dark .decorated-text {
   display: flex;
 }
 
-.page.theme_dark .text__link {
+.theme_dark .text__link {
   text-shadow: 2px 1px var(--accent-color);
   text-decoration: none;
 }
 
-.page.theme_dark .section__title {
+.theme_dark .section__title {
   color: var(--accent-color);
 }

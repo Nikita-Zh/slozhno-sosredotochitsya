@@ -4,6 +4,21 @@
   переключая тему
 */
 
+/* ==========================================
+
+Искренне не понимаю иной рабочий способ задание стилей для тёмной и светлой темы,
+переключаемых как автоматически браузером, так и принудительно.
+
+Кажется для этого и нужен селектор темы, чтобы переопределить стили без конфликтов.
+Либо я не понял замечания к коду.
+
+Что касается "background-attachment: fixed;", то свойство становится неактивным при другом background
+и не получается его указать только в единственном месте,
+поэтому мне приходится его дублировать везде, где требуется заменить background.
+Достаточно убрать background-attachment со светлой темы, как фон перестает быть фиксированным. Также для тёмной.
+
+========================================== */
+
 .page.theme_light {
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
@@ -21,15 +36,15 @@
   background-attachment: fixed;
 }
 
-.page.theme_light .decorated-text {
+.theme_light .decorated-text {
   display: none;
 }
 
-.page.theme_light .section__title {
+.theme_light .section__title {
   color: var(--title-color);
 }
 
-.page.theme_light .text__link {
+.theme_light .text__link {
   text-shadow: 2px 2px var(--accent-color);
   border-bottom: transparent;
 }
