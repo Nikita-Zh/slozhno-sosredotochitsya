@@ -49,7 +49,8 @@
   }
 
   .page {
-    background: url("../images/cover-image-light.png") 50% / cover no-repeat;
+    background: url("../images/cover-image-light.png") 50% / cover no-repeat,
+      var(--bg-color);
     background-attachment: fixed;
   }
 
