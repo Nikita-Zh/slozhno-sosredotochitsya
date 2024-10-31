@@ -5,8 +5,103 @@
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff8dcb;
+  --primary-color: #fff1f7;
+  --title-color: #ffc2e6;
+  --text-color: #353430;
+}
+
+.page.theme_light .header {
+  background: url("../images/cover-image-light.png") 50% / cover no-repeat;
+}
+
+.page.theme_light .header::before {
+  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+}
+
+.page.theme_light .header::after {
+  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+}
+
+.page.theme_light .header__theme-menu-button {
+  color: var(--text-color);
+}
+
+.page.theme_light .header__theme-menu-button_active {
+  border: 1px solid var(--text-color);
+}
+
+.page.theme_light .decorated-text {
+  display: none;
+}
+
+.page.theme_light .header__description {
+  color: var(--text-color);
+}
+
+.page.theme_light .section__title {
+  color: var(--text-color);
+}
+
+.page.theme_light .paragraph__title {
+  color: var(--text-color);
+}
+
+.page.theme_light .text__link {
+  text-shadow: 2px 2px var(--accent-color);
+  border-bottom: transparent;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --primary-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+  }
+
+  .header {
+    background: url("../images/cover-image-light.png") 50% / cover no-repeat;
+  }
+  /* TODO: добавить логических переменных */
+
+  .header::before {
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  .header::after {
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--text-color);
+  }
+
+  .decorated-text {
+    display: none;
+  }
+
+  .header__description {
+    color: var(--text-color);
+  }
+
+  .section__title {
+    color: var(--text-color);
+  }
+
+  .paragraph__title {
+    color: var(--text-color);
+  }
+
+  .text__link {
+    text-shadow: 2px 2px var(--accent-color);
+    border-bottom: transparent;
+  }
 }
