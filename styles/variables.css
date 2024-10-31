@@ -5,7 +5,12 @@
 
 :root {
   --accent-color: #ff0070;
-  --primary-color: #000028;
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
+  --header-title-color: #db00ff;
+  --header-title-shadow-color: var(--accent-color);
+  --title-color: #000028;
+  --title-bg-color: var(--accent-color);
+  --menu-color: var(--accent-color);
+  --menu-color-hover: rgba(255, 0, 112, 0.4);
+  --corner-color: var(--accent-color);
 }

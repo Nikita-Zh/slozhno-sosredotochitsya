@@ -4,16 +4,30 @@
   переключая тему
 */
 
-:root.theme-dark {
+.page.theme_dark {
   --accent-color: #ff0070;
-  --primary-color: #000028;
-  --title-color: #db00ff;
   --text-color: #f1b2ce;
+  --header-title-color: #db00ff;
+  --header-title-shadow-color: var(--accent-color);
+  --title-color: #000028;
+  --title-bg-color: var(--accent-color);
+  --menu-color: var(--accent-color);
+  --menu-color-hover: rgba(255, 0, 112, 0.4);
+  --corner-color: var(--accent-color);
+
+  background: url("../images/cover-image-dark.png") 50% / cover no-repeat;
+  background-attachment: fixed;
 }
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+.page.theme_dark .decorated-text {
+  display: flex;
+}
+
+.page.theme_dark .text__link {
+  text-shadow: 2px 1px var(--accent-color);
+  text-decoration: none;
+}
+
+.page.theme_dark .section__title {
+  color: var(--accent-color);
 }
