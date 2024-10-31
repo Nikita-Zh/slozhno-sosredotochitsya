@@ -46,7 +46,6 @@
 
 .theme_light .text__link {
   text-shadow: 2px 2px var(--accent-color);
-  border-bottom: transparent;
 }
 
 @media (prefers-color-scheme: light) {
@@ -79,6 +78,5 @@
 
   .text__link {
     text-shadow: 2px 2px var(--accent-color);
-    border-bottom: transparent;
   }
 }
