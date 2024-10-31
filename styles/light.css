@@ -5,6 +5,7 @@
 */
 
 .page.theme_light {
+  --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --header-title-color: #ffc2e6;
@@ -15,7 +16,8 @@
   --menu-color-hover: rgba(50, 49, 45, 0.4);
   --corner-color: var(--menu-color);
 
-  background: url("../images/cover-image-light.png") 50% / cover no-repeat;
+  background: url("../images/cover-image-light.png") 50% / cover no-repeat,
+    var(--bg-color);
   background-attachment: fixed;
 }
 
@@ -34,6 +36,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --bg-color: #fff1f7;
     --accent-color: #ff8dcb;
     --text-color: #353430;
     --header-title-color: #ffc2e6;

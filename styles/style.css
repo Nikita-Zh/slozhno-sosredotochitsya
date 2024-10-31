@@ -6,7 +6,8 @@
   line-height: 23.4px;
   color: var(--text-color);
   overflow-x: hidden;
-  background: url("../images/cover-image-dark.png") 50% / cover no-repeat;
+  background: url("../images/cover-image-dark.png") 50% / cover no-repeat,
+    var(--bg-color);
   background-attachment: fixed;
 }
 
