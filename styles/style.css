@@ -47,14 +47,12 @@
     padding: 20px;
   }
 
-  .header::before,
-  .footer::before {
+  .decorated-zone::before {
     top: 20px;
     right: 20px;
   }
 
-  .header::after,
-  .footer::after {
+  .decorated-zone::after {
     left: 20px;
     bottom: 20px;
   }
