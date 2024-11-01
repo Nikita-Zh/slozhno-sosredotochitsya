@@ -4,23 +4,13 @@
   переключая тему
 */
 
-
-/* ==========================================
-
-Если отказаться от селекторов обращения к конкретной теме,
-то если браузер выбрал светлую тему и мы принудительно переключаем на тёмную,
-тогда стили останутся соответствующие светлой.
-
-чуть больше описал в light.css
-
-========================================== */
-
 .page.theme_dark {
   --bg-color: #000028;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --header-title-color: #db00ff;
   --header-title-shadow-color: var(--accent-color);
+  --section-title-color: var(--accent-color);
   --title-color: #000028;
   --title-bg-color: var(--accent-color);
   --menu-color: var(--accent-color);
@@ -29,18 +19,8 @@
 
   background: url("../images/cover-image-dark.png") 50% / cover no-repeat,
     var(--bg-color);
-  background-attachment: fixed;
 }
 
 .theme_dark .decorated-text {
   display: flex;
-}
-
-.theme_dark .text__link {
-  text-shadow: 2px 1px var(--accent-color);
-  text-decoration: none;
-}
-
-.theme_dark .section__title {
-  color: var(--accent-color);
 }

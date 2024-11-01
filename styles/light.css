@@ -4,27 +4,13 @@
   переключая тему
 */
 
-/* ==========================================
-
-Искренне не понимаю иной рабочий способ задания стилей для тёмной и светлой темы,
-переключаемых как автоматически браузером, так и принудительно.
-
-Кажется для этого и нужен селектор темы, чтобы переопределить стили без конфликтов.
-Либо я не понял замечания к коду.
-
-Что касается "background-attachment: fixed;", то свойство становится неактивным при другом background
-и не получается его указать только в единственном месте,
-поэтому мне приходится его дублировать везде, где требуется заменить background.
-Достаточно убрать background-attachment со светлой темы, как фон перестает быть фиксированным. Также для тёмной.
-
-========================================== */
-
 .page.theme_light {
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --header-title-color: #ffc2e6;
   --header-title-shadow-color: #ff0070;
+  --section-title-color: var(--text-color);
   --title-color: #353430;
   --title-bg-color: var(--accent-color);
   --menu-color: #353430;
@@ -33,19 +19,10 @@
 
   background: url("../images/cover-image-light.png") 50% / cover no-repeat,
     var(--bg-color);
-  background-attachment: fixed;
 }
 
 .theme_light .decorated-text {
   display: none;
-}
-
-.theme_light .section__title {
-  color: var(--title-color);
-}
-
-.theme_light .text__link {
-  text-shadow: 2px 2px var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -55,6 +32,7 @@
     --text-color: #353430;
     --header-title-color: #ffc2e6;
     --header-title-shadow-color: #ff0070;
+    --section-title-color: var(--text-color);
     --title-color: #353430;
     --title-bg-color: var(--accent-color);
     --menu-color: #353430;
@@ -65,18 +43,9 @@
   .page {
     background: url("../images/cover-image-light.png") 50% / cover no-repeat,
       var(--bg-color);
-    background-attachment: fixed;
   }
 
   .decorated-text {
     display: none;
-  }
-
-  .section__title {
-    color: var(--title-color);
-  }
-
-  .text__link {
-    text-shadow: 2px 2px var(--accent-color);
   }
 }
